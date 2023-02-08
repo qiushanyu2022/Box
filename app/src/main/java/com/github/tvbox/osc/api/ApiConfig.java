@@ -375,8 +375,8 @@ public class ApiConfig {
 
         // takagen99: Check if Live URL is setup in Settings, if no, get from File Config
         liveChannelGroupList.clear();           //修复从后台切换重复加载频道列表
-        String liveURL = Hawk.get(HawkConfig.LIVE_URL, "");
-        String epgURL  = Hawk.get(HawkConfig.EPG_URL, "");
+        String liveURL = Hawk.get(HawkConfig.LIVE_URL, "http://43.156.11.232:3249/tvbox/zhibo.php");
+        String epgURL  = Hawk.get(HawkConfig.EPG_URL, "http://epg.112114.xyz/");
 
         String liveURL_final = null;
         try {
